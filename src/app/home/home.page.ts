@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { IonicRestService } from '../services/service.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    private navCtrl: NavController,
+  ) {}
 
+  onClickAddEmployee() {
+    this.navCtrl.navigateForward(['add-employee-page']);
+  }
+
+  onClickGetEmployee() {
+    this.navCtrl.navigateForward(['employee-details-page']);
+  }
 }

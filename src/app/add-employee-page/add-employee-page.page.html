@@ -1,0 +1,55 @@
+<!-- Default back button -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Add Employee Details</h1>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta in officiis
+    natus, ratione tempora soluta.
+  </p>
+
+  <div class="inputFields">
+    <ion-label>Fullname</ion-label>
+    <ion-item>
+      <img src="../../assets/icon/name.png" alt="" />
+      <ion-input placeholder="Enter Your Name"  [(ngModel)]="data.name"></ion-input>
+    </ion-item>
+  </div>
+  <div class="inputFields">
+    <ion-label>UID</ion-label>
+    <ion-item>
+      <img src="../../assets/icon/uid.png" alt="" />
+      <ion-input placeholder="Enter Your UID"  [(ngModel)]="data.uid"></ion-input>
+    </ion-item>
+  </div>
+  <div class="inputFields">
+    <ion-label>Email</ion-label>
+    <ion-item>
+      <img src="../../assets/icon/email.png" alt="" />
+      <ion-input type="email" placeholder="Enter Your email" [(ngModel)]="data.email"></ion-input>
+    </ion-item>
+  </div>
+  <div class="inputFields">
+    <ion-label>Phone No.</ion-label>
+    <ion-item>
+      <img src="../../assets/icon/phone.png" alt="" />
+      <ion-input type="phone" placeholder="Enter Your Phone" [(ngModel)]="data.phone"></ion-input>
+    </ion-item>
+  </div>
+  <div class="inputFields">
+    <ion-label>Designation</ion-label>
+    <ion-item>
+      <img src="../../assets/icon/job.png" alt="" />
+      <ion-input placeholder="Enter Your Designation" [(ngModel)]="data.designation"></ion-input>
+    </ion-item>
+  </div>
+  <div class="btnContainer">
+    <button class="btn" (click)="onClickSubmit()">Submit</button>
+  </div>
+</ion-content>

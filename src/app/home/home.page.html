@@ -1,20 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="bg"></div>
+  <div class="container">
+    <ion-avatar>
+      <img src="../../assets/logo.png" />
+    </ion-avatar>
+    <h1><b>Welcome To EMS</b></h1>
+    <h2>Choose your Action</h2>
+    <div class="btnParent">
+      <button class="btn" (click)="onClickAddEmployee()">Add a new employee</button><br>
+      <button class="btn" (click)="onClickGetEmployee()">Get employee details</button>
+    </div>
   </div>
 </ion-content>
